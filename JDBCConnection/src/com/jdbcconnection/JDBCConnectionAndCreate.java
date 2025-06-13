@@ -11,7 +11,8 @@ public class JDBCConnectionAndCreate {
 		Connection connection=null;
 		Statement statement=null;
          try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");//driver loading
+                   
 			connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","Ponny@017");
 			if(connection!=null) {
 				System.out.println("connected");
